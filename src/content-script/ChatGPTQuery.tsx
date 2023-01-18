@@ -4,7 +4,6 @@ import { memo, useCallback } from 'react'
 import ReactMarkdown from 'react-markdown'
 import rehypeHighlight from 'rehype-highlight'
 import Browser from 'webextension-polyfill'
-import { captureEvent } from '../analytics'
 import { Answer } from '../messaging'
 import ChatGPTFeedback from './ChatGPTFeedback'
 import { isBraveBrowser, shouldShowTriggerModeTip } from './utils.js'
@@ -59,12 +58,6 @@ function ChatGPTQuery(props: Props) {
   useEffect(() => {
     shouldShowTriggerModeTip().then((show) => setShowTip(show))
   }, [])
-
-  useEffect(() => {
-    if (status === 'success') {
-      captureEvent('showAnswer', { status })
-    }
-  }, [props.question, status])
 
   const openOptionsPage = useCallback(() => {
     Browser.runtime.sendMessage({ type: 'OPEN_OPTIONS_PAGE' })

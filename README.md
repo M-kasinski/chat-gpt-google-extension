@@ -1,14 +1,11 @@
-# ChatGPT for Google
+# <img src="./src/logo.png" alt="logo" width="30"/> ChatGPT for Qwant
 
-A browser extension to display ChatGPT response alongside Google (and other search engines) results
 
-[Install from Chrome Web Store](https://chrome.google.com/webstore/detail/chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf)
+A browser extension to display ChatGPT response alongside Qwant (and other search engines) results
 
-[Install from Mozilla Add-on Store](https://addons.mozilla.org/addon/chatgpt-for-google/)
+<!-- [Install from Chrome Web Store](https://chrome.google.com/webstore/detail/chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf)
 
-## Supported Search Engines
-
-Google, Baidu, Bing, DuckDuckGo, Brave, Yahoo, Naver, Yandex, Kagi, Searx
+[Install from Mozilla Add-on Store](https://addons.mozilla.org/addon/chatgpt-for-google/) -->
 
 ## Screenshot
 
@@ -33,12 +30,6 @@ Google, Baidu, Bing, DuckDuckGo, Brave, Yahoo, Naver, Yandex, Kagi, Searx
 
 Disable "Prevent sites from fingerprinting me based on my language preferences" in `brave://settings/shields`
 
-### How to make it work in Opera
-
-![Screenshot](screenshots/opera.png?raw=true)
-
-Enable "Allow access to search page results" in the extension management page
-
 ## Build from source
 
 1. Clone the repo
@@ -48,4 +39,4 @@ Enable "Allow access to search page results" in the extension management page
 
 ## Credit
 
-This project is inspired by [ZohaibAhmed/ChatGPT-Google](https://github.com/ZohaibAhmed/ChatGPT-Google)
+This project is inspired by [wong2/chat-gpt-google-extension](https://github.com/wong2/chat-gpt-google-extension)
